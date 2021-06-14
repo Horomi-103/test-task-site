@@ -72,30 +72,28 @@
                 float: left;
 			}
             #m {
-                background-color: aqua; 
-                margin: 2%;
+                background-color: rgb(161, 167, 167); 
                 width: 20%;
-                height: 50%;
+                height: 100%;
                 margin-left: 5%;
                 float: left;
             }
             #mp {
-                margin: 2%;
                 width: 20%;
-                height: 50%;
+                height: 100%;
                 margin-left: 5%;
                 float: left;
             }
             #t {
-                margin: 2%;
+                height: 100%;
                 width: 20%;
-                height: 50%;
                 margin-left: 5%;
                 float: left;
             }
             #men1 img {
-                height: 100%;
+                height: 80%;
                 float: left;
+                padding-top: 1%;
             }
             #men1 a {
                 text-decoration: none;
@@ -108,31 +106,41 @@
                 width: 50%;
                 float: left;
                 text-align: right;
-                
-			}
-            #men2 img{
-                height: 40%;
-               
+            }
+            #men2 img {
+                height: 80%;
+                float: left;
             }
             #men2 a {
                 text-decoration: none;
-                text-align: center;
-                color: #332e2e;
-                width: 50%;
-                
-            }   
-            #men2 li {
-                width: 15%;
-                display: inline-block;
-            }    
+                color: #353535;
+            }
+            
             /**/
 
             #timeline {	
-				background-color: #eff5ef;
+				background-color: #aab1aa;
                 border: 1px solid #000;
 				clear:both;
                 height: 78%;
 			}
+            #news {
+                margin-left: 2%;
+                margin-top: 2%;
+                height: 90%;
+                width: 70%;
+                border: 1px solid #000;
+                background-color: #ffffff;
+            }
+            #news img {
+                margin-left: 3%;
+                height: 70%;
+                width: 94%;
+            }
+            #news p {
+                margin-left: 3%;
+               
+            }
             /**/
         </style>
     </head>
@@ -156,23 +164,32 @@
         <div id="menu">
 
             <div id="men1">
-                <div id = "m"><a href="#"><img src = "men.png"><p>Statistics</p></a></div>
+                <div id = "m"><a href="#"><img src = "men.png"><p>Activity</p></a></div>
                 <div id = "mp"><a href="map.html"><img src = "cal.png"><p>Map</p></a></div>
                 <div id = "t"><a href="time.html"><img src = "shes.jpg"><p>Time</p></a></div>
             </div>
 
             <div id="men2">
-                <ul>
-                    <li><a href="#"><img src = "stat.png"><p>Notes</p></a></li>
-                    <li><a href="#"><img src = "stat.png"><p>Freends</p></a></li>
-                    <li><a href="#"><img src = "stat.png"><p>Photos</p></a></li>
-                    <li><a href="#"><img src = "stat.png"></a></li>
-                </ul>
+                <div id = "not"><a href="#"><img src = "men.png"><p>Notes</p></a></div>
+                <div id = "fried"><a href="#"><img src = "cal.png"><p>Friends</p></a></div>
+                <div id = "ph"><a href="#"><img src = "shes.jpg"><p>Photos</p></a></div>
             </div>
         </div>
 
         <div id="timeline">
 
+            <div id="news">
+                <p>Himalayan sunset</p>
+                <img src = "hs.jpg">
+            </div>
+
+            <div id="prof">
+            
+            </div>
+
+            <div id="navig">
+            
+            </div>
         </div>
     </body>
 </html>
