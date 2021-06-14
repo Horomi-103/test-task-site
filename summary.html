@@ -2,71 +2,138 @@
 	<head>
 		<style>
             #container {	
-				background-color: #eff5ef;
-                border: 1px solid #000;
+				background-color: #ffffff;
+                border-bottom: 1px solid #000;
+                border-right: 1px solid #000;
 				clear:both;
-                height: 100px;
+                height: 15%;
 			}
 
             #cont1 {
-				border: 1px solid #000;	
-                width: 45%;
-                margin-left: 1%;
+				width: 45%;
+                text-align: left;	
                 height: 100%;
+                float: left;
+                margin-left: 2%;
 			}
             #cont1 img{
-                
-                margin-top: 0; 
-                height: 80%;
+                height: 40%;
+                padding-top: 2%;
             }
             #cont1 a {
                 text-decoration: none;
+                text-align: center;
                 color: #332e2e;
                 width: 50%;
-                padding-left: 20%;
             }
             #cont1 p {
-                margin-top: 0;
-                font-size: 70%;
-                text-align: right;
-                border: 1px solid #000;
+                font-size: 150%;
             }
             #cont1 p, #cont1 img {
-                display: inline-block;
-            }
-
-            #cont1, #cont2 {
-                display: inline-block;
-            }
-            
-
+                float: left;
+            }         
+            /**/
 			#cont2 {
-				text-align: right;	
-                border: 1px solid #000;
-                width: 50%;
+				text-align: right;
+                width: 45%;
                 height: 100%;
+                float: right;
 			}
             #cont2 a {
                 text-decoration: none;
                 color: #808080;
-                height: 40px;
+                height: 70%;
             }
 			#cont2 li {
 				display: inline-block;
-                height: 50px;
-                padding-right: 50px; 
+                height: 70%;
+                padding-right: 10%; 
 			}
             #cont2 p {
                 text-align: center;
-                margin-top: 0;
-                font-size: 70%;
+                font-size: 80%;
             }
             #cont2 img{
-                text-align: center; 
-                margin-top: 0; 
-                height: 80%;
+                text-align: center;
+                height: 70%;
+            }
+
+            /**/
+
+            #menu {	
+				background-color: #eff5ef;
+                border: 1px solid #000;
+                height: 7%;
+			}
+
+            #men1 {
+				height: 100%;
+                width: 50%;
+                float: left;
+			}
+            #m {
+                background-color: aqua; 
+                margin: 2%;
+                width: 20%;
+                height: 50%;
+                margin-left: 5%;
+                float: left;
+            }
+            #mp {
+                margin: 2%;
+                width: 20%;
+                height: 50%;
+                margin-left: 5%;
+                float: left;
+            }
+            #t {
+                margin: 2%;
+                width: 20%;
+                height: 50%;
+                margin-left: 5%;
+                float: left;
+            }
+            #men1 img {
+                height: 100%;
+                float: left;
+            }
+            #men1 a {
+                text-decoration: none;
+                color: #353535;
+                margin-left: 5%;
             }
             
+            #men2 {
+				height: 100%;
+                width: 50%;
+                float: left;
+                text-align: right;
+                
+			}
+            #men2 img{
+                height: 40%;
+               
+            }
+            #men2 a {
+                text-decoration: none;
+                text-align: center;
+                color: #332e2e;
+                width: 50%;
+                
+            }   
+            #men2 li {
+                width: 15%;
+                display: inline-block;
+            }    
+            /**/
+
+            #timeline {	
+				background-color: #eff5ef;
+                border: 1px solid #000;
+				clear:both;
+                height: 78%;
+			}
+            /**/
         </style>
     </head>
     
@@ -74,16 +141,38 @@
         <div id="container">
             
             <div id="cont1">
-                <a href="#"><img src = "stat.png"><p>User Pages - Profile</p></a>
+                <a href="#"><img src = "strl.png"><p><b>User Pages</b> - Profile</p></a>
             </div>
 
             <div id="cont2">
 						<ul>
 							<li><a href="#"><img src = "stat.png"><p>Statistics</p></a></li>
-							<li><a href="#"><img src = "stat.png"><p>Invoices</p></a></li>
-							<li><a href="#"><img src = "stat.png"><p>Schedule</p></a></li>
+							<li><a href="#"><img src = "calc.png"><p>Invoices</p></a></li>
+							<li><a href="#"><img src = "mus.png"><p>Schedule</p></a></li>
 						</ul>
-				</div>
+			</div>
+        </div>
+
+        <div id="menu">
+
+            <div id="men1">
+                <div id = "m"><a href="#"><img src = "men.png"><p>Statistics</p></a></div>
+                <div id = "mp"><a href="map.html"><img src = "cal.png"><p>Map</p></a></div>
+                <div id = "t"><a href="time.html"><img src = "shes.jpg"><p>Time</p></a></div>
+            </div>
+
+            <div id="men2">
+                <ul>
+                    <li><a href="#"><img src = "stat.png"><p>Notes</p></a></li>
+                    <li><a href="#"><img src = "stat.png"><p>Freends</p></a></li>
+                    <li><a href="#"><img src = "stat.png"><p>Photos</p></a></li>
+                    <li><a href="#"><img src = "stat.png"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="timeline">
+
         </div>
     </body>
 </html>
