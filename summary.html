@@ -1,218 +1,77 @@
 <html>
-	<head>
-		<style>
-            #container {	
-				background-color: #ffffff;
-                border-bottom: 1px solid #000;
-                border-right: 1px solid #000;
-				clear:both;
-                height: 15%;
-			}
 
-            #cont1 {
-				width: 45%;
-                text-align: left;	
-                height: 100%;
-                float: left;
-                margin-left: 2%;
-			}
-            #cont1 img{
-                height: 40%;
-                padding-top: 2%;
-            }
-            #cont1 a {
-                text-decoration: none;
-                text-align: center;
-                color: #332e2e;
-                width: 50%;
-            }
-            #cont1 p {
-                font-size: 150%;
-            }
-            #cont1 p, #cont1 img {
-                float: left;
-            }         
-            /**/
-			#cont2 {
-				text-align: right;
-                width: 45%;
-                height: 100%;
-                float: right;
-			}
-            #cont2 a {
-                text-decoration: none;
-                color: #808080;
-                height: 70%;
-            }
-			#cont2 li {
-				display: inline-block;
-                height: 70%;
-                padding-right: 10%; 
-			}
-            #cont2 p {
-                text-align: center;
-                font-size: 80%;
-            }
-            #cont2 img{
-                text-align: center;
-                height: 70%;
-            }
+<head>
+    <link rel="stylesheet" href="sum.css">
 
-            /**/
+</head>
 
-            #menu {	
-				background-color: #eff5ef;
-                border: 1px solid #000;
-                height: 7%;
-			}
+<body>
+    <div class="container">
 
-            #men1 {
-				height: 100%;
-                width: 40%;
-                float: left;
-			}
-            #m {
-                background-color: rgb(161, 167, 167); 
-                width: 20%;
-                height: 100%;
-                margin-left: 5%;
-                float: left;
-            }
-            #mp {
-                width: 20%;
-                height: 100%;
-                margin-left: 5%;
-                float: left;
-            }
-            #t {
-                height: 100%;
-                width: 20%;
-                margin-left: 5%;
-                float: left;
-            }
-            #men1 img {
-                height: 80%;
-                float: left;
-                padding-top: 1%;
-            }
-            #men1 a {
-                text-decoration: none;
-                color: #353535;
-                margin-left: 5%;
-            }
-            
-            #men2 {
-				height: 100%;
-                width: 58%;
-                float: right;
-                border: 1px solid #000;
-            }
-            #not {
-                width: 20%;
-                height: 100%;
-                float: right;
-            }
-            #fried {
-                width: 20%;
-                height: 100%;
-                float: right;
-            }
-            #ph {
-                height: 100%;
-                width: 20%;
-                float: right;
-            }
-            #stg {
-                height: 100%;
-                width: 20%;
-                float: right;
-            }
-            #men2 img {
-                height: 80%;
-                float: left;
-     
-            }
-            #men2 a {
-                text-decoration: none;
-                color: #353535;
-        
-            }
-            
-            /**/
-
-            #timeline {	
-				background-color: #aab1aa;
-                border: 1px solid #000;
-				clear:both;
-                height: 78%;
-			}
-            #news {
-                margin-left: 2%;
-                margin-top: 2%;
-                height: 90%;
-                width: 70%;
-                border: 1px solid #000;
-                background-color: #ffffff;
-            }
-            #news img {
-                margin-left: 3%;
-                height: 70%;
-                width: 94%;
-            }
-            #news p {
-                margin-left: 3%;
-               
-            }
-            /**/
-        </style>
-    </head>
-    
-    <body>
-        <div id="container">
-            
-            <div id="cont1">
-                <a href="#"><img src = "strl.png"><p><b>User Pages</b> - Profile</p></a>
-            </div>
-
-            <div id="cont2">
-						<ul>
-							<li><a href="#"><img src = "stat.png"><p>Statistics</p></a></li>
-							<li><a href="#"><img src = "calc.png"><p>Invoices</p></a></li>
-							<li><a href="#"><img src = "mus.png"><p>Schedule</p></a></li>
-						</ul>
-			</div>
+        <div class="cont1">
+            <a href="#"><img src="Картинки/strl.png">
+                <p><b>User Pages</b> - Profile</p>
+            </a>
         </div>
 
-        <div id="menu">
+        <div class="cont2">
+            <ul>
+                <li><a href="#"><img src="Картинки/stat.png">
+                        <p>Statistics</p>
+                    </a></li>
+                <li><a href="#"><img src="Картинки/calc.png">
+                        <p>Invoices</p>
+                    </a></li>
+                <li><a href="#"><img src="Картинки/mus.png">
+                        <p>Schedule</p>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
 
-            <div id="men1">
-                <div id = "m"><a href="#"><img src = "men.png"><p>Activity</p></a></div>
-                <div id = "mp"><a href="map.html"><img src = "cal.png"><p>Map</p></a></div>
-                <div id = "t"><a href="time.html"><img src = "shes.jpg"><p>Time</p></a></div>
-            </div>
+    <div class="menu">
 
-            <div id="men2">
-                <div id = "stg"><a href="#"><img src = "shes.jpg"></a></div>
-                <div id = "ph"><a href="#"><img src = "ph.png"><p>Photos</p></a></div>
-                <div id = "fried"><a href="#"><img src = "fr.png"><p>Friends</p></a></div>
-                <div id = "not"><a href="#"><img src = "nt.png"><p>Notes</p></a></div>
-            </div>
+        <div class="men1">
+            <div class="m"><a href="#"><img src="Картинки/men.png">
+                    <p>Activity</p>
+                </a></div>
+            <div class="mp"><a href="map.html"><img src="Картинки/cal.png">
+                    <p>Map</p>
+                </a></div>
+            <div class="mp"><a href="time.html"><img src="Картинки/shes.png">
+                    <p>Time</p>
+                </a></div>
         </div>
 
-        <div id="timeline">
-
-            <div id="news">
-                <p>Himalayan sunset</p>
-                <img src = "hs.jpg">
-            </div>
-
-            <div id="prof">
-            
-            </div>
-
-            <div id="navig">
-            
-            </div>
+        <div class="men2">
+            <div class="not"><a href="#"><img src="Картинки/shes.png"></a></div>
+            <div class="not"><a href="#"><img src="Картинки/ph.png">
+                    <p>Photos</p>
+                </a></div>
+            <div class="not"><a href="#"><img src="Картинки/fr.png">
+                    <p>Friends</p>
+                </a></div>
+            <div class="not"><a href="#"><img src="Картинки/nt.png">
+                    <p>Notes</p>
+                </a></div>
         </div>
-    </body>
+    </div>
+
+    <div class="timeline">
+
+        <div class="news">
+            <p>Himalayan sunset</p>
+            <img src="Картинки/hs.jpg">
+        </div>
+
+        <div class="prof">
+
+        </div>
+
+        <div class="navig">
+
+        </div>
+    </div>
+</body>
+
 </html>
