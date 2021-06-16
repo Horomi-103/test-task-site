@@ -1,0 +1,111 @@
+.container {	
+    background-color: #ffffff;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    clear:both;
+    height: 10%;
+}
+
+.cont1 {
+    width: 45%;
+    text-align: left;	
+    height: 90%;
+    float: left;
+    margin-left: 2%;
+}
+.cont1 img{
+    height: 50%;
+    padding-top: 2%;
+}
+
+.cont1 p {
+    text-decoration: none;
+    font-size: 150%;
+    color: #353535;
+}
+
+.cont1 p, .cont1 img {
+    float: left;
+}
+
+.cont2 {
+    text-align: right;
+    width: 45%;
+    height: 100%;
+    float: right;
+}
+.cont2 a {
+    text-decoration: none;
+    color: #808080;
+    height: 70%;
+}
+.cont2 li {
+    display: inline-block;
+    height: 70%;
+    padding-right: 10%; 
+}
+.cont2 p {
+    font-size: 80%;
+    text-align: center;
+}
+.cont2 img{
+    text-align: center;
+    height: 50%;
+}
+
+/**/
+.menu {	
+    background-color: #eff5ef;
+    border: 1px solid #000;
+    height: 7%;
+}
+
+.men1 {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.m {
+    background-color: rgb(161, 167, 167); 
+    width: 15%;
+    height: 100%;
+    margin-left: 3%;
+    float: left;
+}
+.mp {
+    width: 15%;
+    height: 100%;
+    float: left;
+    margin-left: 3%;
+}
+.men1 img {
+    height: 50%;
+    float: left;
+    margin-right: 10%;
+}
+.men1 a {
+    text-decoration: none;
+    color: #252424;
+
+}
+
+.men2 {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.not {
+    width: 15%;
+    height: 100%;
+    float: right;
+    margin-right: 1%;
+}
+.men2 img {
+    height: 50%;
+    float: left;
+    margin-right: 10%;
+}
+.men2 a {
+    text-decoration: none;
+    color: #353535;
+}
