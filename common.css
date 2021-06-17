@@ -1,111 +1,112 @@
-.container {	
+.top_menu {	
     background-color: #ffffff;
-    border-bottom: 1px solid #000;
-    border-right: 1px solid #000;
+    border: 1px solid #DDE0E6;
     clear:both;
     height: 10%;
 }
 
-.cont1 {
+.u_pages {
     width: 45%;
     text-align: left;	
     height: 90%;
     float: left;
     margin-left: 2%;
 }
-.cont1 img{
-    height: 50%;
+.u_pages img{
+    height: 70%;
     padding-top: 2%;
 }
 
-.cont1 p {
+.u_pages p {
     text-decoration: none;
     font-size: 150%;
     color: #353535;
 }
 
-.cont1 p, .cont1 img {
+.u_pages p, .u_pages img {
     float: left;
 }
 
-.cont2 {
-    text-align: right;
-    width: 45%;
+.actions {
+    text-align: center;
+    width: 20%;
     height: 100%;
     float: right;
 }
-.cont2 a {
+.actions a {
     text-decoration: none;
     color: #808080;
     height: 70%;
 }
-.cont2 li {
+.actions li {
     display: inline-block;
     height: 70%;
     padding-right: 10%; 
 }
-.cont2 p {
+.actions p {
     font-size: 80%;
-    text-align: center;
+   
 }
-.cont2 img{
-    text-align: center;
+.actions img{
+    
     height: 50%;
 }
 
 /**/
-.menu {	
+.lower_menu {	
     background-color: #eff5ef;
-    border: 1px solid #000;
+    border: 1px solid #DDE0E6;
     height: 7%;
 }
 
-.men1 {
+.left_menu {
     height: 100%;
     width: 50%;
     float: left;
 }
 .m {
-    background-color: rgb(161, 167, 167); 
+    border-bottom: 3px solid #2375E1;
     width: 15%;
     height: 100%;
     margin-left: 3%;
     float: left;
 }
+.m p{color: #2375E1;}
 .mp {
     width: 15%;
     height: 100%;
     float: left;
     margin-left: 3%;
 }
-.men1 img {
+.left_menu img {
     height: 50%;
     float: left;
     margin-right: 10%;
 }
-.men1 a {
+.left_menu a {
     text-decoration: none;
     color: #252424;
 
 }
 
-.men2 {
+.right_menu {
     height: 100%;
-    width: 50%;
-    float: left;
+    width: 40%;
+    float: right;
 }
-.not {
+.icons {
     width: 15%;
     height: 100%;
     float: right;
-    margin-right: 1%;
+    margin-right: 2%;
+    align-items: center;
 }
-.men2 img {
+.right_menu img {
     height: 50%;
     float: left;
     margin-right: 10%;
 }
-.men2 a {
+.right_menu a {
     text-decoration: none;
     color: #353535;
 }

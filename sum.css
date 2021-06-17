@@ -1,17 +1,15 @@
-.timeline {	
-    border-right: 1px solid #000;
-    border-left: 1px solid #000;
+.timeline {
     clear:both;
     height: 80%;
-    background-color: rgb(161, 167, 167);
+    background-color: #F4F7FB;
 }
 .news {
     margin-left: 2%;
     margin-top: 1%;
     height: 95%;
     width: 73%;
-    border: 1px solid #000;
-    background-color: #ffffff;
+    border: 1px solid #DDE0E6;
+    background-color: #FFFFFF;
     float: left;
 }
 .news img {
@@ -23,27 +21,26 @@
     margin-left: 3%;
 }
 /**/
-.prof, .navig {
+.profile, .navig {
     display: inline-block;
 }
-.prof {
-    border: 1px solid #000;
+.profile {
+    border: 1px solid #DDE0E6;
     float: left;
     width: 20%;
     height: 50%;
     margin-left: 3%;
     margin-top: 1%;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
-.prof img {
-    height: 60%;
+.profile img {
+    height: 50%;
     width: 50%;
-    border-radius: 100px;
-    border: 1px solid rgb(23, 24, 23);
+    border-radius: 80px;
     margin-left: 25%;
     margin-top: 10%;
 }
-.prof p {
+.profile p {
     height: 15%;
     width: 100%;
     font-size: 150%;
@@ -51,17 +48,16 @@
 }
 
 .navig {
-    border: 1px solid #000;
+    border: 1px solid #DDE0E6;
     width: 20%;
     height: 42%;
     margin-left: 3%;
     margin-top: 1%;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     clear: left;
 }
 .navig p{
     border: 1px solid #000;
-
     padding-left: 2%;
     font-size: 150%;
 }
