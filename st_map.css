@@ -1,0 +1,23 @@
+.map_place {
+    clear:both;
+    height: 80%;
+    background-color: #F4F7FB;
+}
+.mapp {
+    margin-left: 2%;
+    margin-top: 1%;
+    height: 95%;
+    width: 95%;
+    border: 1px solid #DDE0E6;
+    background-color: #FFFFFF;
+    float: left;
+    border: 1px solid #000;
+}
+.mapp p {
+    margin-left: 3%;
+}
+.mapp iframe {
+    margin-left: 3%;
+    width: 95%;
+    height: 85%;
+}
