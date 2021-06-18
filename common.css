@@ -1,0 +1,112 @@
+.top_menu {	
+    background-color: #ffffff;
+    border: 1px solid #DDE0E6;
+    clear:both;
+    height: 10%;
+}
+
+.u_pages {
+    width: 45%;
+    text-align: left;	
+    height: 90%;
+    float: left;
+    margin-left: 2%;
+}
+.u_pages img{
+    height: 70%;
+    padding-top: 2%;
+}
+
+.u_pages p {
+    text-decoration: none;
+    font-size: 150%;
+    color: #353535;
+}
+
+.u_pages p, .u_pages img {
+    float: left;
+}
+
+.actions {
+    text-align: center;
+    width: 20%;
+    height: 100%;
+    float: right;
+}
+.actions a {
+    text-decoration: none;
+    color: #808080;
+    height: 70%;
+}
+.actions li {
+    display: inline-block;
+    height: 70%;
+    padding-right: 10%; 
+}
+.actions p {
+    font-size: 80%;
+   
+}
+.actions img{
+    
+    height: 50%;
+}
+
+/**/
+.lower_menu {	
+    background-color: #eff5ef;
+    border: 1px solid #DDE0E6;
+    height: 7%;
+}
+
+.left_menu {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.m {
+    border-bottom: 3px solid #2375E1;
+    width: 15%;
+    height: 100%;
+    margin-left: 3%;
+    float: left;
+}
+.m p{color: #2375E1;}
+.mp {
+    width: 15%;
+    height: 100%;
+    float: left;
+    margin-left: 3%;
+}
+.left_menu img {
+    height: 50%;
+    float: left;
+    margin-right: 10%;
+}
+.left_menu a {
+    text-decoration: none;
+    color: #252424;
+
+}
+
+.right_menu {
+    height: 100%;
+    width: 40%;
+    float: right;
+}
+.icons {
+    width: 15%;
+    height: 100%;
+    float: right;
+    margin-right: 2%;
+    align-items: center;
+}
+.right_menu img {
+    height: 50%;
+    float: left;
+    margin-right: 10%;
+}
+.right_menu a {
+    text-decoration: none;
+    color: #353535;
+}
