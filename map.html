@@ -11,19 +11,26 @@
         ymaps.ready(init);
         function init() {
             var myMap = new ymaps.Map("y_map", {
-                center: [56.74, 37.22],
+                center: [lat, lng],
                 zoom: 15
             }),
                 myGeoObject = new ymaps.GeoObject({
                     geometry: {
                         type: "Point",
-                        coordinates: [56.74, 37.22]
+                        coordinates: [lat, lng]
                     },
                 }, {
                     draggable: true // Метку можно перемещать.
                 });
         }
+
     </script>
+    <script type="text/javascript">
+        navigator.geolocation.getCurrentPosition(showPosition); // Запрашиваем местоположение, и в случае успеха вызываем функцию showPosition
+        var lat = document.write(position.coords.latitude);
+        var lng = document.write(position.coords.longitude);
+    </script>
+
 
     <script>
         window.addEventListener('load', () => {
