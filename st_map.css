@@ -11,83 +11,84 @@
     border: 1px solid #DDE0E6;
     background-color: #FFFFFF;
     float: left;
-    border: 1px solid #000;
 }
 .mapp p {
     margin-left: 3%;
 }
-.mapp iframe {
-    margin-left: 3%;
-    width: 95%;
-    height: 85%;
+#g_map{
+    width: 100%;
+    height: 90%;
+    margin-left: 2%;
 }
 
 .preloader {
-    /*фиксированное позиционирование*/
     position: fixed;
-    /* координаты положения */
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    /* фоновый цвет элемента */
-    background: #e0e0e0;
-    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
-    z-index: 1001;
+    top: 27%;
+    left: 4.3%;
+    bottom: 2%;
+    width: 91%;
+    height: 67%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    background: rgba(20, 17, 17, 0.712);
+    transition: rgba(17, 17, 20, 0.712)0s 0s;
   }
-  
-  .preloader__row {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 70px;
-    height: 70px;
-    margin-top: -35px;
-    margin-left: -35px;
-    text-align: center;
-    animation: preloader-rotate 2s infinite linear;
-  }
-  
-  .preloader__item {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    background-color: #337ab7;
-    border-radius: 100%;
-    width: 35px;
-    height: 35px;
-    animation: preloader-bounce 2s infinite ease-in-out;
-  }
-  
-  .preloader__item:last-child {
-    top: auto;
-    bottom: 0;
-    animation-delay: -1s;
-  }
-  
-  @keyframes preloader-rotate {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes preloader-bounce {
-  
-    0%,
-    100% {
-      transform: scale(0);
-    }
-  
-    50% {
-      transform: scale(1);
-    }
-  }
-  
-  .loaded_hiding .preloader {
-    transition: 0.3s opacity;
+
+  .preloader_hidden {
+    visibility: hidden;
     opacity: 0;
+    transition: opacity 1s, visibility 0s 1s;
+  }
+  .spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
   }
   
-  .loaded .preloader {
-    display: none;
+  .cube1, .cube2 {
+    background-color: #333;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+    animation: sk-cubemove 1.8s infinite ease-in-out;
+  }
+  
+  .cube2 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  @-webkit-keyframes sk-cubemove {
+    25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+    50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+    75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+    100% { -webkit-transform: rotate(-360deg) }
+  }
+  
+  @keyframes sk-cubemove {
+    25% { 
+      transform: translateX(42px) rotate(-90deg) scale(0.5);
+      -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+    } 50% { 
+      transform: translateX(42px) translateY(42px) rotate(-179deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+    } 50.1% { 
+      transform: translateX(42px) translateY(42px) rotate(-180deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+    } 75% { 
+      transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+      -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    } 100% { 
+      transform: rotate(-360deg);
+      -webkit-transform: rotate(-360deg);
+    }
   }
