@@ -3,9 +3,26 @@
 <head>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="st_map.css">
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+
     <div class="top_menu">
 
         <div class="u_pages">
@@ -111,7 +128,6 @@
     </div>
 
     <div class="map_place">
-
         <div class="mapp">
             <p>
                 Basic map
@@ -119,8 +135,8 @@
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=13zvlGhFG-4KqUrr4sEp1FpuJlTqaVhg3"></iframe>
         </div>
 
-           
-        
+
+
 </body>
 
 </html>
