@@ -22,10 +22,13 @@
             geolocation.get({
                 provider: 'browser',
                 mapStateAutoApply: true
-            }).then(function (result) {
+            }).then(function (result) {// обработчик при выполнении  запроса
                 result.geoObjects.options.set('preset', 'islands#blueCircleIcon');
                 myMap.geoObjects.add(result.geoObjects);
-            });
+            })
+                .catch(function (result) {  // обработчик при отклонении  запроса
+                    alert("Не удалось получить геолокацию"); 
+                })
         }
     </script>
 
