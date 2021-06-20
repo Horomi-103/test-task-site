@@ -3,37 +3,11 @@
 <head>
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/st_timer.css">
-    <link rel="stylesheet" href="scripts/time_sc.js">
-
-    <script>
-        var s=0;
-        var m=0;
-        
-        /*function STOP(){
-            for(i=0; i<1000;i++)
-            {
-                if(i=900)break;
-                w=m+r;
-                document.getElementById("time").innerHTML=w;
-            }
-        }*/
-        
-
-        function WW() {
-            if(s>59){
-                s=0;
-                m=m+1;
-            }
-            s++;
-            w=m+":"+s;
-            document.getElementById("time").innerHTML=w;
-        }
-        
-        setInterval(WW, 1000);
-    </script>
+    <script src="scripts/time_sc.js"></script>
+    
 </head>
 
-<body onload="WW()">
+<body >
     <div class="top_menu">
 
         <div class="u_pages">

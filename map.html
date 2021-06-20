@@ -14,10 +14,11 @@
             var geolocation = ymaps.geolocation,
                 myMap = new ymaps.Map('y_map', {
                     center: [55, 34],
-                    zoom: 10
-                }, {
+                    zoom: 10,
+                    controls: []
+                },/* {
                     searchControlProvider: 'yandex#search'
-                });
+                }*/);
 
             geolocation.get({
                 provider: 'browser',
@@ -26,9 +27,22 @@
                 result.geoObjects.options.set('preset', 'islands#blueCircleIcon');
                 myMap.geoObjects.add(result.geoObjects);
             })
-                .catch(function (result) {  // обработчик при отклонении  запроса
-                    alert("Не удалось получить геолокацию");
-                })
+
+            butt = new ymaps.control.Button("Где я?");
+            myMap.controls.add(butt, { float: 'right' });
+
+            butt.events.add('click', function (e) {
+                geolocation.get({
+                    provider: 'browser',
+                    mapStateAutoApply: true
+                }).then(function (result) {// обработчик при выполнении  запроса
+                    result.geoObjects.options.set('preset', 'islands#blueCircleIcon');
+                    myMap.geoObjects.add(result.geoObjects);
+                }).catch(function (result) {  // обработчик при отклонении  запроса
+                    /*butt.innerHTML('Не удалось найти местоположение, повторить?');*/
+                    alert("Не удалось найти местоположение. Повторить?");
+            })
+        });
         }
 
         window.addEventListener('load', () => {

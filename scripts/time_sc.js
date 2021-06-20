@@ -11,7 +11,7 @@ function WW() {
     document.getElementById("time").innerHTML = w;
 }
 setInterval(WW, 1000);
-
+WW();
 /*function STOP(){
     for(i=0; i<1000;i++)
     {

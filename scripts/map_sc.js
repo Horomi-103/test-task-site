@@ -1,5 +1,4 @@
-src="https://api-maps.yandex.ru/2.1/?apikey=c84c56d2-d002-4770-97e0-0de35bff37d5&lang=ru_RU"
-        type="text/javascript"
+
 ymaps.ready(init);
 
 function init() {
