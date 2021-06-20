@@ -1,0 +1,14 @@
+.timer {
+    clear:both;
+    height: 80%;
+    background-color: #F4F7FB;
+}
+.time {
+    margin-left: 2%;
+    margin-top: 1%;
+    height: 95%;
+    width: 95%;
+    border: 1px solid #DDE0E6;
+    background-color: #FFFFFF;
+    float: left;
+}
