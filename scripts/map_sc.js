@@ -6,9 +6,7 @@ function init() {
         center: [55, 34],
         zoom: 10,
         controls: []
-    },/* {
-                    searchControlProvider: 'yandex#search'
-                }*/);
+    });
 
     geolocation.get({
         provider: 'browser',
