@@ -20,6 +20,13 @@
     height: 90%;
     margin-left: 2%;
 }
+input{
+  position:fixed;
+  top: 30%; 
+  right: 7%;
+  z-index: 20;
+  
+}
 
 .preloader {
     position: fixed;

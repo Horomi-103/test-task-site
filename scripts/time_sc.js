@@ -1,17 +1,18 @@
-var s = 0;
-var m = 0;
+var secon = 0;
+var minut = 0;
 
-function WW() {
-    if (s > 59) {
-        s = 0;
-        m = m + 1;
+function Act_Timer() {
+    if (secon > 59) {
+        secon = 0;
+        minut = minut + 1;
     }
-    s++;
-    w = m + ":" + s;
-    document.getElementById("time").innerHTML = w;
+    secon++;
+    res = minut + ":" + secon;
+    document.getElementById("time").innerHTML = res;
 }
-setInterval(WW, 1000);
-WW();
+setInterval(Act_Timer, 1000);
+Act_Timer();
+
 /*function STOP(){
     for(i=0; i<1000;i++)
     {
