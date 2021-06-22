@@ -1,27 +1,8 @@
 var seconds = 0;
 var minutes = 0;
 var hours = 0;
-/*function Act_Timer() {
-    if (secon > 59) {
-        secon = 0;
-        minut = minut + 1;
-    }
-    secon++;
 
-    res = minut + ":" + secon;
-    document.getElementById("time").innerHTML = res;
-}
-setInterval(Act_Timer, 1000);
-Act_Timer();
-*/
-/*function STOP(){
-    for(i=0; i<1000;i++)
-    {
-        if(i=900)break;
-        w=m+r;
-        document.getElementById("time").innerHTML=w;
-    } */
-function Act_Timer() {
+function activeTimer() {
     seconds++;
     if (seconds ==60) {
         seconds = 0;
@@ -33,7 +14,7 @@ function Act_Timer() {
     }
 
     result = hours + ":" +minutes + ":" + seconds;
-    document.getElementById("time").innerHTML = result;
+    document.querySelector('.time').innerHTML = result;
 }
-setInterval(Act_Timer, 1000);
-Act_Timer();
+setInterval(activeTimer, 1000);
+activeTimer();

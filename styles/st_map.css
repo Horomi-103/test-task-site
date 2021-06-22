@@ -1,4 +1,4 @@
-.map_place {
+.map-place {
     clear:both;
     height: 80%;
     background-color: #F4F7FB;
@@ -15,12 +15,12 @@
 .mapp p {
     margin-left: 3%;
 }
-#y_map{
+#y-map{
     width: 95%;
     height: 90%;
     margin-left: 2%;
 }
-input{
+button{
   position:fixed;
   top: 30%; 
   right: 7%;

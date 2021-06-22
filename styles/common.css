@@ -1,29 +1,29 @@
-.top_menu {	
+.top-menu {	
     background-color: #ffffff;
     border: 1px solid #DDE0E6;
     clear:both;
     height: 10%;
 }
 
-.u_pages {
+.u-pages {
     width: 45%;
     text-align: left;	
     height: 90%;
     float: left;
     margin-left: 2%;
 }
-.u_pages img{
+.u-pages img{
     height: 70%;
     padding-top: 2%;
 }
 
-.u_pages p {
+.u-pages p {
     text-decoration: none;
     font-size: 150%;
     color: #353535;
 }
 
-.u_pages p, .u_pages img {
+.u-pages p, .u-pages img {
     float: left;
 }
 
@@ -53,43 +53,42 @@
 }
 
 /**/
-.lower_menu {	
+.lower-menu {	
     background-color: #FFFFFF;
     border: 1px solid #DDE0E6;
     height: 7%;
 }
 
-.left_menu {
+.left-menu {
     height: 100%;
     width: 50%;
     float: left;
 }
-.m {
+.delicated-block {
     border-bottom: 3px solid #2375E1;
     width: 15%;
     height: 100%;
     margin-left: 3%;
     float: left;
 }
-.m p{color: #2375E1;}
-.mp {
+.delicated-block p{color: #2375E1;}
+.regular-block {
     width: 15%;
     height: 100%;
     float: left;
     margin-left: 3%;
 }
-.left_menu img {
+.left-menu img {
     height: 50%;
     float: left;
     margin-right: 10%;
 }
-.left_menu a {
+.left-menu a {
     text-decoration: none;
     color: #252424;
-
 }
 
-.right_menu {
+.right-menu {
     height: 100%;
     width: 40%;
     float: right;
@@ -101,12 +100,12 @@
     margin-right: 2%;
     align-items: center;
 }
-.right_menu img {
+.right-menu img {
     height: 50%;
     float: left;
     margin-right: 10%;
 }
-.right_menu a {
+.right-menu a {
     text-decoration: none;
     color: #353535;
 }
