@@ -1,7 +1,3 @@
-var newTitle = "Map";
-var newTitle1 = "Timer";
-var newTitle2 = "Profile";
-
 function goToPage(a) {
   fetch(a)
     .then(function (answer) {
