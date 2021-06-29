@@ -1,4 +1,4 @@
-setTimeout(ymaps.ready, 1000);
+ymaps.ready(init);
 
 function initMap() {
 

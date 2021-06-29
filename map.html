@@ -3,6 +3,7 @@
 <head>
     <title>Map</title>
     <meta charset="UTF-8" />
+
     <script src="https://api-maps.yandex.ru/2.1/?apikey=c84c56d2-d002-4770-97e0-0de35bff37d5&lang=ru_RU"
         type="text/javascript"></script>
 
@@ -10,6 +11,8 @@
     <link rel="stylesheet" href="styles/sum.css">
     <link rel="stylesheet" href="styles/st_timer.css">
 
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/time_sc.js"></script>
     
 
 </head>
@@ -59,24 +62,24 @@
     <div class="lower-menu">
 
         <div class="left-menu">
-            <div class="regular-block">
-                <a href="" onclick="goToPage('index.html')">
+            <div class="regular-block" id="qwe">
+                <a href="#" onclick="goToPage('index.html')">
                     <p>
                         <img src="image/subt2.png">
                         Activity
                     </p>
                 </a>
             </div>
-            <div class="delicated-block">
-                <a href="">
+            <div class="delicated-block" id="rty">
+                <a href="#" onclick="goToPage('map.html')">
                     <p>
                         <img src="image/map.png">
                         Map
                     </p>
                 </a>
             </div>
-            <div class="regular-block">
-                <a href="" onclick="goToPage('time.html')">
+            <div class="regular-block" id="qwe">
+                <a href="#" onclick="goToPage('time.html')">
                     <p>
                         <img src="image/settin1.png">
                         Time
@@ -120,8 +123,6 @@
     </div>
 
     <div class="map-place" id="content">
-
-        
         <link rel="stylesheet" href="styles/st_map.css">
         <div class="mapp">
             <p>
@@ -141,8 +142,7 @@
             </div>
         </div>
     </div>
-    <script src="scripts/navigation.js"></script>
-    <script src="scripts/time_sc.js"></script>
+    
 
 </body>
 
