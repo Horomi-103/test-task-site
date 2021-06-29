@@ -45,7 +45,10 @@ function goToPage(pagePath) {
     }
   }
 
-  return loadPage(pagePath).then(() => {
-    history.pushState(null, '', pagePath);
+  return loadPage(pagePath).then((result) => {
+    var el = document.createElement('html');
+    el.innerHTML = result;
+
+    history.pushState(null, el.querySelector('title').innerHTML, pagePath);
   });
 }
