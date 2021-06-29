@@ -8,7 +8,8 @@ function goToPage(a) {
       var el = document.createElement('html');
       el.innerHTML = result;
       document.querySelector('#content').innerHTML = el.querySelector('#content').innerHTML;
-      document.title = a;
+      document.querySelector('title').innerHTML = el.querySelector('title').innerHTML;
+      
       // @NOTE: переинициализируем все скрипты в #content, потому что иначе они не работают
       // https://www.danielcrabtree.com/blog/25/gotchas-with-dynamically-adding-script-tags-to-html
       document.querySelector('#content').querySelectorAll('script').forEach(oldScript => {
