@@ -1,13 +1,16 @@
 <html>
 
 <head>
+    <title>Map</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/st_map.css">
-
     <script src="https://api-maps.yandex.ru/2.1/?apikey=c84c56d2-d002-4770-97e0-0de35bff37d5&lang=ru_RU"
         type="text/javascript"></script>
-    <script src="scripts/map_sc.js"></script>
+
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/sum.css">
+    <link rel="stylesheet" href="styles/st_timer.css">
+
+    
 
 </head>
 
@@ -57,7 +60,7 @@
 
         <div class="left-menu">
             <div class="regular-block">
-                <a href="index.html">
+                <a href="" onclick="goToPage('index.html')">
                     <p>
                         <img src="image/subt2.png">
                         Activity
@@ -65,7 +68,7 @@
                 </a>
             </div>
             <div class="delicated-block">
-                <a href="map.html">
+                <a href="">
                     <p>
                         <img src="image/map.png">
                         Map
@@ -73,7 +76,7 @@
                 </a>
             </div>
             <div class="regular-block">
-                <a href="time.html">
+                <a href="" onclick="goToPage('time.html')">
                     <p>
                         <img src="image/settin1.png">
                         Time
@@ -116,7 +119,10 @@
         </div>
     </div>
 
-    <div class="map-place">
+    <div class="map-place" id="content">
+
+        
+        <link rel="stylesheet" href="styles/st_map.css">
         <div class="mapp">
             <p>
                 Basic map
@@ -124,17 +130,19 @@
 
             <div id="y-map">
             </div>
-
+            <script src="scripts/map_sc.js"></script>
         </div>
         <button onclick="press()">Где я?</button>
-    </div>
 
-    <div class="preloader">
-        <div class="spinner">
-            <div class="cube1"></div>
-            <div class="cube2"></div>
+        <div class="preloader">
+            <div class="spinner">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
+            </div>
         </div>
     </div>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/time_sc.js"></script>
 
 </body>
 

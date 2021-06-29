@@ -4,17 +4,18 @@ var hours = 0;
 
 function activeTimer() {
     seconds++;
-    if (seconds ==60) {
+    if (seconds == 60) {
         seconds = 0;
-        minutes ++;
+        minutes++;
     }
-    if (minutes ==60) {
+    if (minutes == 60) {
         minutes = 0;
         hours++;
     }
-
-    result = hours + ":" +minutes + ":" + seconds;
-    document.querySelector('.time').innerHTML = result;
+    result = hours + ":" + minutes + ":" + seconds;
+    element = document.querySelector('.time');
+    if (element) { element.innerHTML = result; }
 }
 setInterval(activeTimer, 1000);
-activeTimer();
+
+

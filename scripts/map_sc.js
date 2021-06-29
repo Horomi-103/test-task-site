@@ -1,4 +1,4 @@
-ymaps.ready(init);
+setTimeout(ymaps.ready, 1000);
 
 function initMap() {
 
@@ -7,10 +7,10 @@ function initMap() {
         zoom: 10,
         controls: []
     })
-
-    queryGeolocation().then(function (result) {
+    return queryGeolocation().then(function (result) {
         addPoint(result);
     })
+
 }
 
 function addPoint(a) {
@@ -31,10 +31,9 @@ function press() {
     document.querySelector('button').innerHTML = "определяю...";
     queryGeolocation().then(function (result) {
         addPoint(result);
-        document.querySelector('button').innerHTML = "Где я?"
-
+        document.querySelector('button').innerHTML = "Где я?";
     })
-    queryGeolocation().catch(function () {  // обработчик при отклонении  запроса
+    .catch(function () {  // обработчик при отклонении  запроса
         document.querySelector('button').disabled = false;
         document.querySelector('button').innerHTML = "Не удалось найти местоположение. Повторить?";
     });
@@ -42,6 +41,7 @@ function press() {
 
 function init() {
     var preloader = document.querySelector('.preloader');
-    initMap();
-    preloader.classList.add('preloader_hidden');
+    initMap().then(function () {
+        preloader.classList.add('preloader_hidden');
+    })
 }

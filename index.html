@@ -1,8 +1,16 @@
 <html>
 
 <head>
+    <title>Profile</title>
+    <meta charset="UTF-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=c84c56d2-d002-4770-97e0-0de35bff37d5&lang=ru_RU"
+        type="text/javascript"></script>
+
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/sum.css">
+    <link rel="stylesheet" href="styles/st_timer.css">
+    <link rel="stylesheet" href="styles/st_map.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -51,7 +59,7 @@
 
         <div class="left-menu">
             <div class="delicated-block">
-                <a href="index.html">
+                <a href="">
                     <p>
                         <img src="image/subt.png">
                         Activity
@@ -59,7 +67,7 @@
                 </a>
             </div>
             <div class="regular-block">
-                <a href="map.html">
+                <a href="" onclick="goToPage('map.html')">
                     <p>
                         <img src="image/map1.png">
                         Map
@@ -67,7 +75,7 @@
                 </a>
             </div>
             <div class="regular-block">
-                <a href="time.html">
+                <a href="" onclick="goToPage('time.html')">
                     <p>
                         <img src="image/settin1.png">
                         Time
@@ -110,8 +118,9 @@
         </div>
     </div>
 
-    <div class="timeline">
-
+    <div class="timeline" id="content">
+        <script src="scripts/navigation.js"></script>
+        <link rel="stylesheet" href="styles/sum.css">
         <div class="news">
             <p>
                 Himalayan sunset
@@ -121,17 +130,19 @@
 
         <div class="profile">
             <img src="image/photo.png">
-            <b>
-                <p>
-                    Harold Pain
-                </p>
-            </b>
+
+            <p>
+                Harold Pain
+            </p>
+
         </div>
 
         <div class="navig">
             <p>Navigation</p>
         </div>
     </div>
+
+
 </body>
 
 </html>

@@ -109,3 +109,9 @@
     text-decoration: none;
     color: #353535;
 }
+
+.timeline, .map-place, .timer {
+    clear:both;
+    height: 80%;
+    background-color: #F4F7FB;
+}
