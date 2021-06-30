@@ -64,14 +64,7 @@
     width: 50%;
     float: left;
 }
-.delicated-block {
-    border-bottom: 3px solid #2375E1;
-    width: 15%;
-    height: 100%;
-    margin-left: 3%;
-    float: left;
-}
-.delicated-block p{color: #2375E1;}
+
 .regular-block {
     width: 15%;
     height: 100%;
@@ -114,4 +107,9 @@
     clear:both;
     height: 80%;
     background-color: #F4F7FB;
+}
+
+
+a.active {
+    color: #2375E1;
 }
