@@ -1,14 +1,20 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="sum.css">
-    <link rel="stylesheet" href="common.css">
+    <title>Profile</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/st_timer.css">
+    <link rel="stylesheet" href="styles/st_map.css">
+
+    <script src="scripts/time_sc.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="top_menu">
+    <div class="top-menu">
 
-        <div class="u_pages">
+        <div class="u-pages">
             <a href="#">
                 <img src="image/butt.png">
                 <p>
@@ -47,27 +53,27 @@
         </div>
     </div>
 
-    <div class="lower_menu">
+    <div class="lower-menu">
 
-        <div class="left_menu">
-            <div class="m">
-                <a href="index.html">
+        <div class="left-menu">
+            <div class="regular-block">
+                <a href="index.html" onclick="goToPage()">
                     <p>
-                        <img src="image/subt.png">
+                        <img src="image/subt2.png">
                         Activity
                     </p>
                 </a>
             </div>
-            <div class="mp">
-                <a href="map.html">
+            <div class="regular-block">
+                <a href="map.html" onclick="goToPage()">
                     <p>
                         <img src="image/map1.png">
                         Map
                     </p>
                 </a>
             </div>
-            <div class="mp">
-                <a href="time.html">
+            <div class="regular-block">
+                <a href="time.html" onclick="goToPage()">
                     <p>
                         <img src="image/settin1.png">
                         Time
@@ -76,7 +82,7 @@
             </div>
         </div>
 
-        <div class="right_menu">
+        <div class="right-menu">
             <div class="icons"><a href="#">
                     <p>
                         <img src="image/settin1.png">
@@ -107,12 +113,12 @@
                     </p>
                 </a>
             </div>
-
         </div>
     </div>
 
-    <div class="timeline">
-
+    <div class="timeline" id="content">
+        <script src="scripts/navigation.js"></script>
+        <link rel="stylesheet" href="styles/sum.css">
         <div class="news">
             <p>
                 Himalayan sunset
@@ -122,17 +128,19 @@
 
         <div class="profile">
             <img src="image/photo.png">
-            <b>
-                <p>
-                    Harold Pain
-                </p>
-            </b>
+
+            <p>
+                Harold Pain
+            </p>
+
         </div>
 
         <div class="navig">
             <p>Navigation</p>
         </div>
     </div>
+
+
 </body>
 
 </html>

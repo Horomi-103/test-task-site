@@ -1,13 +1,23 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="common.css">
+    <title>Map</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/sum.css">
+    <link rel="stylesheet" href="styles/st_timer.css">
+
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/time_sc.js"></script>
+
+
 </head>
 
 <body>
-    <div class="top_menu">
+    <div class="top-menu">
 
-        <div class="u_pages">
+        <div class="u-pages">
             <a href="#">
                 <img src="image/butt.png">
                 <p>
@@ -46,27 +56,27 @@
         </div>
     </div>
 
-    <div class="lower_menu">
+    <div class="lower-menu">
 
-        <div class="left_menu">
-            <div class="mp">
-                <a href="index.html">
+        <div class="left-menu">
+            <div class="regular-block">
+                <a href="index.html" onclick="goToPage()">
                     <p>
                         <img src="image/subt2.png">
                         Activity
                     </p>
                 </a>
             </div>
-            <div class="m">
-                <a href="map.html">
+            <div class="regular-block">
+                <a href="map.html" onclick="goToPage()">
                     <p>
-                        <img src="image/map.png">
+                        <img src="image/map1.png">
                         Map
                     </p>
                 </a>
             </div>
-            <div class="mp">
-                <a href="time.html">
+            <div class="regular-block">
+                <a href="time.html" onclick="goToPage()">
                     <p>
                         <img src="image/settin1.png">
                         Time
@@ -75,7 +85,7 @@
             </div>
         </div>
 
-        <div class="right_menu">
+        <div class="right-menu">
             <div class="icons"><a href="#">
                     <p>
                         <img src="image/settin1.png">
@@ -106,9 +116,33 @@
                     </p>
                 </a>
             </div>
-
         </div>
     </div>
+
+    <div class="map-place" id="content">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=c84c56d2-d002-4770-97e0-0de35bff37d5&lang=ru_RU"
+        type="text/javascript"></script>
+        <link rel="stylesheet" href="styles/st_map.css">
+        <div class="mapp">
+            <p>
+                Basic map
+            </p>
+
+            <div id="y-map">
+            </div>
+            <script src="scripts/map_sc.js"></script>
+        </div>
+        <button onclick="press()">Где я?</button>
+
+        <div class="preloader">
+            <div class="spinner">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

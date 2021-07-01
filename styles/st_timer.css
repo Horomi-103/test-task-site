@@ -1,0 +1,14 @@
+
+.time {
+    margin-left: 2%;
+    margin-top: 1%;
+    height: 95%;
+    width: 95%;
+    border: 1px solid #DDE0E6;
+    background-color: #FFFFFF;
+    float: left;
+    color:#524b4b;
+    padding-left: 2%;
+    padding-top: 1%;
+    font-size: 20px;
+}
